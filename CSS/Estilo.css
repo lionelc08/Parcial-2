@@ -1,0 +1,254 @@
+body{
+    background: #202C45;
+    background: linear-gradient(180deg, #202C45 70.67%, #1D3057 100%);
+}
+
+#header{
+    background-color: #E3BA6A;
+    color: #202C45;
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 5px solid #e9914f;
+    position: relative;
+    overflow: hidden;
+}
+
+.margen{
+    margin-left: 180px;
+    margin-right: 180px;
+}
+#header h1{
+    font-family: "Changa One", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;    
+    color: #1D3057;
+}
+
+#Barra{
+    background: #dde2f7;
+    border-radius: 30px;
+    width: fit-content;
+    margin: auto;
+}
+
+#Barra ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+#Barra li{
+    margin: 20px;
+}
+
+#Barra a{
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    color: #202C45;
+    font-size:20px;
+    position: static;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#Barra a:hover{
+    background: #E3BA6A;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#Barra a:hover::after{
+    width: 80px;
+}
+
+.contenedor{
+    margin-top: -20px;
+    background-color: #dde2f7;
+    color: #202C45;
+    padding-top: 100px;
+    margin-top: -100px;
+    text-align: center;
+}
+.contenedor h1{
+    color: #1D3057;
+    font-family: "Changa One", sans-serif;
+     font-weight: 500;
+     font-size: 70px;
+     margin-bottom: -10px;
+}
+
+.contenedor h2{
+    padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.contenedorCont{
+    display: flex;
+}
+
+.subtitulo{
+    color: #E3BA6A;
+    font-family: "Changa One", sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.contenido .parrafos{
+    color: #dde2f7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;    
+    text-align: justify;
+    padding-bottom: 30px;      
+}
+
+.cont {
+    display: block;
+    margin: 10px auto 0;
+    width: 40%;
+    border: 4px solid #798ee0;
+    border-radius: 10px;
+    box-shadow: #0033a234 0px 30px 20px;
+    transition: transform 0.3s ease;
+}
+
+.imgcont{
+    max-width: 100%;
+    height: auto;
+    width:300px;
+    height:300px;
+    border: 4px solid #dde2f7;
+    border-radius: 10px;
+    box-shadow: #0033a234 0px 30px 20px;
+    transition: transform 0.3s ease;
+    margin-left: 30px ;
+}
+
+.imgcont:hover{
+    transform: scale(1.02);
+}
+
+.cuadros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.tipos{
+  background: linear-gradient( 180deg,#00184b 15%,#dde2f7 9%);
+    border-radius: 44px;
+    border-style: solid;
+    border-color: #dde2f7;
+    border-width: 1px;
+    padding: 20px;
+    width: 220px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.tipos p{    
+    color: #0e182d;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;    
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.tipos:hover {
+  transform: scale(1.03);
+}
+
+.tipoimg {
+  display: block;
+  margin: 10px auto 0;
+  width: 40%;
+}
+
+.subtitulos{
+    text-align: center;
+    color: #E3BA6A;
+    font-family: "Changa One", sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.tipo{
+    text-align: center;
+    color: #E3BA6A;
+    font-family: "Changa One", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: -8px;
+    margin-bottom: 5px;
+}
+#footer{
+    background: #E3BA6A;
+    color: #000d3d;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #e9914f;
+    margin-top: 30px;
+}
+.resaltadoG{
+    color: #E3BA6A;
+    background-color: #7996d539;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.resaltadoB{
+    color: #000d3d;
+    background-color: #42310b39;
+    padding: 2px;
+    border-radius: 3px;
+}
+code{
+    color: #E3BA6A;
+    background-color: #7996d539;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.titulo{
+    color: #dde2f7;
+    font-family: "Changa One", sans-serif;
+    font-weight: 100;
+    font-size: 60px;
+    width: fit-content;   
+    margin: auto; 
+    padding-bottom: 30px;
+}
+
+.principales{
+    color: #dde2f7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;    
+    text-align: justify;
+}
+
+.estructura{
+    color: #ff8000;
+    font-family: "Quantico", sans-serif;
+    font-size: 20px;    
+    text-align: justify;
+}
+
+.estructura li p{
+    color: #dde2f7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;    
+    text-align: justify;
+}
+
+.estructura ul {
+    background-color: #1D3057;
+    color: #a7b8fd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    width: fit-content;
+    border-radius: 20px;    
+}
+

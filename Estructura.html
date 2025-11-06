@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="CSS/Estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura</title>
+</head>
+<body>
+        <header id="header">
+            <h1>Mundo API</h1>
+        </header>
+
+
+    <div>
+        <nav id="Barra">
+            <ul>
+                <li><a href="Index.HTML">Inicio</a></li>
+                <li><a href="Estructura.HTML">Estructura</a></li>
+                <li><a href="Beneficios.HTML">Beneficios y buenas practicas</a></li>
+                <li><a href="Ejemplos.HTML">Ejemplos</a></li>
+            </ul>
+        </nav>
+    </div>
+
+<div class="margen">    
+    <div>
+        <h1 class="titulo">Estructura y funcionamiento de una API</h1>
+    </div>
+
+    <div class="contenido">
+        <h2 class="subtitulo">Estructura de una API en WEB</h2>
+        <p class="principales">Las APIs web más comunes suelen tener los siguientes componentes</p>
+        
+        <ol class="estructura">
+            <li><h3 class="componentes">Endpoint (Punto Final):</h3> 
+                <p>Es la URL específica que representa un recurso al que se puede acceder. 
+                Por ejemplo, en una API de usuarios, el endpoint podría ser 
+                <span class="resaltadoG">https://api.ejemplo.com/usuarios</span> .</p>
+            </li>
+
+            <li><h3 class="componentes">Métodos HTTP:</h3>
+                <p>Definen la acción que el cliente desea realizar sobre el recurso. Los más comunes son:</p>
+                <ul class="compo">
+                <li>GET: Obtener o leer datos.</li>
+                <li>POST: Crear un nuevo recurso.</li>
+                <li>PUT/PATCH: Actualizar un recurso existente.</li>
+                <li>DELETE:  Eliminar un recurso.</li>
+            </ul>
+            </li>
+
+            <li><h3 class="componentes"> Parámetros</h3>
+                <p>Información adicional para especificar o filtrar la solicitud.</p>
+                <ul>
+                <li class="compo">Parámetros de Ruta: Parte de la URL (ej: <code>/usuarios/<b>123</b></code>).</li>
+                <li>Parámetros de Consulta (Query): Después del <code>?</code> (ej: <code>/libros?<b>autor=garcia</b></code>).</li>
+                <li>Cabeceras (Headers): Metadatos, como claves de autenticación o formato de contenido (<code>Content-Type</code>).</li>
+                </ul>
+            </li>
+
+            <li><h3 class="componentes"> Cuerpo (Body)</h3>
+            <p>Los datos que se envían al servidor en las solicitudes <span class="resaltadoG">POST</span> o 
+            <span class="resaltadoG">PUT</span>, a menudo formateados en <span class="resaltadoG">JSON</span>.</p>
+            </li>
+        </ol>
+        <img src="IMG/Estructura.png" alt="" class="cont">
+    </div>
+
+    <div class="contenido">
+<h2 class="subtitulo"> Funcionamiento (Ciclo Solicitud-Respuesta)</h2>
+    <p class="principales">La comunicación se basa en un ciclo constante entre un 
+       Cliente (quien solicita) y un Servidor (quien responde).</p>
+    
+    <ol class="estructura">
+        <li>
+            <h3 class="componentes">Solicitud (Request)</h3>
+            <p>El cliente envía una solicitud al*Endpoint con un Método HTTP específico, incluyendo Cabeceras y, si aplica, un Cuerpo con datos.</p>
+        </li>
+        <li>
+            <h3 class="componentes">Procesamiento</h3>
+            <p>La API en el servidor recibe, interpreta la solicitud y ejecuta la lógica necesaria (ej: consultar la base de datos).</p>
+        </li>
+        <li>
+            <h3 class="componentes">Respuesta (Response)</h3>
+            <p>El servidor genera una respuesta que incluye un Código de Estado HTTP y 
+                el Cuerpo de la Respuesta con los datos solicitados (generalmente en JSON) o un mensaje de error.</p>
+        </li>
+        <li>
+            <h3 class="componentes">Entrega</h3>
+            <p>La API envía la respuesta de vuelta al cliente para su uso o manejo del error.</p>
+        </li>
+    </ol>
+    </div>
+</div>
+
+        <footer id="footer">
+        <p> &copy; 2025 Mundo API - Todos los derechos reservado
+
+        </p>
+    </footer>
+</body> 

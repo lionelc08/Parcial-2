@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="CSS/Estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficios</title>
+</head>
+<body>
+
+
+        <header id="header">
+            <h1>Mundo API</h1>
+        </header>
+
+
+    <div>
+        <nav id="Barra">
+            <ul>
+                <li><a href="Index.HTML">Inicio</a></li>
+                <li><a href="Estructura.HTML">Estructura</a></li>
+                <li><a href="Beneficios.HTML">Beneficios y buenas practicas</a></li>
+                <li><a href="Ejemplos.HTML">Ejemplos</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="margen">
+        <div>
+        <h1 class="titulo">Beneficios y Buenas prácticas al usar API</h1>
+    </div>
+    <div class="contenido">
+        <h2 class="subtitulo">Beneficios de Usar APIs</h2>
+        <p class="principales">Las APIs actúan como "traductores" o "intermediarios" que permiten que diferentes sistemas de software 
+            (incluso con distintos lenguajes o plataformas) se comuniquen e intercambien datos de forma segura y estandarizada.</p>
+
+        <ol class="estructura">
+            <li>
+                <h3 class="componentes">Integración y Conectividad</h3>
+                <p>Permiten la comunicación fluida entre aplicaciones, 
+                    servicios y sistemas, lo que facilita la creación de ecosistemas 
+                    complejos y funcionales (Ej: integrar un sistema de pago como PayPal).</p>
+            </li>
+            <li>
+                <h3 class="componentes">Eficiencia y Automatización</h3>
+                <p>Automatizan tareas repetitivas o complejas 
+                    (como la transferencia de datos entre inventario y ventas), reduciendo 
+                    el error humano, liberando tiempo de desarrollo y acelerando procesos.</p>
+            </li>
+            <li>
+                <h3 class="componentes">Escalabilidad</h3>
+                <p>Al separar el cliente (la aplicación que consume el servicio) 
+                    del servidor (el sistema que proporciona el servicio), las APIs 
+                    permiten que los componentes escalen de forma independiente según sea necesario.</p>
+            </li>
+            <li>
+                <h3 class="componentes">Innovación y Desarrollo Rápido</h3>
+                <p>Permiten a los desarrolladores reutilizar funcionalidades 
+                    existentes de otros servicios sin tener que crear todo desde cero, 
+                    acelerando el desarrollo de nuevas características y productos.</p>
+            </li>
+            <li>
+                <h3 class="componentes">Flexibilidad Multiplataforma</h3>
+                <p>Generalmente funcionan en cualquier dispositivo o sistema operativo, 
+                    lo que facilita el desarrollo de aplicaciones para web, móvil, IoT, etc.</p>
+            </li>
+            <li>
+                <h3 class="componentes">Seguridad</h3>
+                <p>Exponen solo los recursos necesarios y actúan como una capa de control,
+                     gestionando la autenticación, la autorización y el monitoreo de accesos.</p>
+            </li>
+        </ol>
+    </div>
+    
+    <div class="contenido">
+    <h2 class="subtitulo">Convenciones RESTful para APIs</h2>
+    <p class="principales">Buenas prácticas para diseñar y consumir APIs REST de forma eficiente y coherente.</p>
+    <ol class="estructura">
+        <li><h3 class="componentes">Nombres en Plural:</h3> 
+            <p>Utiliza sustantivos en plural para nombrar colecciones de recursos. Ejemplo: 
+            <span class="resaltadoG">/users</span> en lugar de <span class="resaltadoG">/user</span>.</p>
+        </li>
+
+        <li><h3 class="componentes">Métodos HTTP Apropiados:</h3>
+            <p>Selecciona el método HTTP correcto según la acción que deseas realizar:</p>
+            <ul class="compo">
+                <li>GET: Para recuperar recursos.</li>
+                <li>POST: Para crear nuevos recursos.</li>
+                <li>PUT/PATCH: Para actualizar recursos existentes.</li>
+                <li>DELETE: Para eliminar recursos.</li>
+            </ul>
+        </li>
+
+        <li><h3 class="componentes">Versionado:</h3>
+            <p>Incluye el número de versión en la URI para mantener compatibilidad. Ejemplo: 
+            <span class="resaltadoG">/api/v1/users</span>.</p>
+        </li>
+
+        <li><h3 class="componentes">Códigos de Estado HTTP:</h3>
+            <p>Utiliza códigos estándar para indicar el resultado de una solicitud:</p>
+            <ul class="compo">
+                <li>200 OK: Solicitud exitosa.</li>
+                <li>201 Created: Recurso creado correctamente.</li>
+                <li>400 Bad Request: Error en la solicitud del cliente.</li>
+                <li>404 Not Found: Recurso no encontrado.</li>
+                <li>500 Internal Server Error: Error en el servidor.</li>
+            </ul>
+        </li>
+
+        <li><h3 class="componentes">Paginación:</h3>
+            <p>Divide grandes conjuntos de datos en fragmentos más pequeños para mejorar el rendimiento. Ejemplo: 
+            <code>/users?page=2&limit=50</code>.</p>
+        </li>
+    </ol>
+ </div>
+
+</div>
+</div>
+
+    <footer id="footer">
+        <p> &copy; 2025 Mundo API - Todos los derechos reservado
+
+        </p>
+    </footer>
+</body>
